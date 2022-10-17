@@ -13,7 +13,7 @@ class Teacher:
 class Faculty:
     lst_teachar = list()
     def __init__(self,fac_name):
-        self.fac.name = fac_name
+        self.fac_name = fac_name
     def fac_info(self):
         print(f'Faculty Name: {self.fac_name}')
     def add_teacher(self,Teacher):
@@ -26,5 +26,12 @@ class Faculty:
 f1 = Faculty("MT")
 
 t1 = Teacher("Puriwat")
+t2 = Teacher("Phornpraresart")
+
+f1.add_teacher(t1)
+f1.add_teacher(t2)
+
+t1.teacher_info()
+t2.teacher_info()
 
 
